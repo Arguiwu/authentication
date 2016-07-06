@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>登陆身份验证</title>
+	<script src="/angular.js"></script>
+	<script src="/angular-ui-router.js"></script>
+	<script src="/app.js"></script>
+</head>
+<body ng-controller="ApplicationController">
+	<a ui-sref='login'>登录</a>
+	<a ui-sref='content'>查看内容(如果没有登录，会跳转到正路页面哦)</a>
+	<div ui-view></div>
+</body>
+</html>

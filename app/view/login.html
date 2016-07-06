@@ -1,0 +1,7 @@
+<form name="loginForm" ng-controller="LoginController" ng-submit="login(credentials)">
+	<label for="username">用户名:</label>
+	<input type="text" id="username" ng-model="credentials.username"/>
+	<label for="password">密码:</label>
+	<input type="password" id="password" ng-model="credentials.password"/>
+	<button type="submit">登录</button>
+</form>

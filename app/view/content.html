@@ -1,0 +1,6 @@
+<div ng-controller="LoginController">
+    <div ng-if="currentUser">欢迎, {{ currentUser.username }}</div>
+    <div ng-if="isAuthorized(userRoles.admin)">您的权限是： admin.</div>
+    <div ng-if="isAuthorized(userRoles.editor)">您的权限是： editor.</div>
+    <div ng-if="isAuthorized(userRoles.guest)">您的权限是： guest.</div>
+</div>
